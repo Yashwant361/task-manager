@@ -22,9 +22,9 @@ const MONGO_URI = process.env.MONGO_URI;
 
 mongoose.connect(MONGO_URI)
   .then(() => {
-    console.log("✅ MongoDB Connected!");
+    console.log("MongoDB Connected!");
     app.listen(PORT, () => {
-      console.log(`✅ Server running → http://localhost:${PORT}`);
+      console.log(`Server running → http://localhost:${PORT}`);
     });
   })
-  .catch((err) => console.log("❌ DB Error:", err.message));
+  .catch((err) => console.log("DB Error:", err.message));
